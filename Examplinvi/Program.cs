@@ -35,6 +35,7 @@ namespace Examplinvi
         static void Main()
         {
             Auth.SetUserCredentials("CONSUMER_KEY", "CONSUMER_SECRET", "ACCESS_TOKEN", "ACCESS_TOKEN_SECRET");
+			
 
             TweetinviEvents.QueryBeforeExecute += (sender, args) =>
             {
@@ -61,7 +62,7 @@ namespace Examplinvi
             Console.ReadKey();
             Console.Clear();
 
-            Examples.Stream_SampleStreamExample();
+            //Examples.Stream_SampleStreamExample();
 
             
             /* Temp samples to verify the library working*/
