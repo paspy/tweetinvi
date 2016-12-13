@@ -8,5 +8,6 @@
         normal,
         bigger,
         mini,
+        original
     }
 }

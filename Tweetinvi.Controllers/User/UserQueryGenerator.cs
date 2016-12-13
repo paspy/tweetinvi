@@ -117,7 +117,9 @@ namespace Tweetinvi.Controllers.User
             {
                 return null;
             }
-
+            if (imageSize == ImageSize.original) {
+                return url.Replace("_normal", "");
+            }
             return url.Replace("_normal", string.Format("_{0}", imageSize));
         }
 
@@ -129,7 +131,9 @@ namespace Tweetinvi.Controllers.User
             {
                 return null;
             }
-
+            if (imageSize==ImageSize.original) {
+                return url.Replace("_normal", "");
+            }
             return url.Replace("_normal", string.Format("_{0}", imageSize));
         }
 
